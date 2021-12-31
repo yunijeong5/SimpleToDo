@@ -33,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 I have not learned Kotlin or Android app development before. So although I could follow all the steps shown in the videos,
-it would have been very challenging if I had to complete the tasks on my own without guidence. But it was fun :)
+it would have been very challenging if I had to complete the tasks on my own without guidance. But it was fun :)
 
 ## License
 
