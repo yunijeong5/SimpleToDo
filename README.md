@@ -26,7 +26,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/yunijeong5/SimpleToDo/blob/master/vid_demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -35,6 +35,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 I have not learned Kotlin or Android app development before. So although I could follow all the steps shown in the videos,
 it would have been very challenging if I had to complete the tasks on my own without guidance. But it was fun :)
 
+Also, LiceCap does not support Linux, so I had to switch OS.
 ## License
 
     Copyright [2021] [CodePath]
