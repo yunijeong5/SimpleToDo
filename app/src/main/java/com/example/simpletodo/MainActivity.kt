@@ -1,10 +1,15 @@
 package com.example.simpletodo
 
+import android.media.metrics.Event
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.EventLog
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.apache.commons.io.FileUtils
@@ -19,21 +24,62 @@ class MainActivity : AppCompatActivity() {
     var listOfTasks = mutableListOf<String>()
     lateinit var adapter: TaskItemAdapter
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    fun onComposeAction(mi: MenuItem) {
+        var builder = AlertDialog.Builder(this)
+
+        // builder.setCancelable(true)
+        builder.setTitle("Use Guide")
+        builder.setMessage("Long press each task to delete.")
+        builder.setPositiveButton("Ok") {
+            dialog, id ->
+            dialog.cancel()
+        }
+        var info = builder.create()
+        info.show()
+    }
+
+    fun deleteEvent(position: Int) {
+        var builder = AlertDialog.Builder(this)
+        builder.setTitle("Confirm Delete")
+        builder.setMessage("Do you want to delete this task?")
+        builder.setPositiveButton("Yes") { dialog, id ->
+            listOfTasks.removeAt(position)
+            adapter.notifyDataSetChanged()
+            saveItems()
+            dialog.cancel()
+        }
+        builder.setNegativeButton("No"
+        ) { dialog, id ->
+            dialog.cancel()
+        }
+        var alert = builder.create()
+        alert.show()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val onLongClickListener = object : TaskItemAdapter.OnLongClickListener {
             override fun onItemLongClicked(position: Int) {
-                // 1. Remove the item from the list
-                listOfTasks.removeAt(position)
-
-                // 2. Notify the adapter that our data set has changed
-                adapter.notifyDataSetChanged()
-
-                saveItems()
+                deleteEvent(position)
+//                // 1. Remove the item from the list
+//                listOfTasks.removeAt(position)
+//
+//                // 2. Notify the adapter that our data set has changed
+//                adapter.notifyDataSetChanged()
+//
+//                saveItems()
             }
         }
+
+
 
 //        // detect when the user clicks on the add button
 //        findViewById<Button>(R.id.button).setOnClickListener {

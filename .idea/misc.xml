@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.24547101449275363" />
+        <entry key="..\:/Codeshelf/CodePath_Android_Prework/SimpleToDo/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1" />
+        <entry key="..\:/Codeshelf/CodePath_Android_Prework/SimpleToDo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22592592592592592" />
+        <entry key="..\:/Codeshelf/CodePath_Android_Prework/SimpleToDo/app/src/main/res/drawable/icons.xml" value="0.1" />
+        <entry key="..\:/Codeshelf/CodePath_Android_Prework/SimpleToDo/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Codeshelf/CodePath_Android_Prework/SimpleToDo/app/src/main/res/xml/menu.xml" value="0.16666666666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4" />
       </map>
     </option>

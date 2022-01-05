@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:onClick="onComposeAction"
+        app:showAsAction="ifRoom"
+        android:title="Use Guide">
+    </item>
+</menu>
