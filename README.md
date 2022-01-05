@@ -16,17 +16,20 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
+* [ ] *--IN PROGRESS--* User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 The following **additional** features are implemented:
 
-* [ ] Improving UI/UX in progress...
+* [X] Delete confirmation popup before removing an item
+* [X] Information icon at App bar: How to use SimpleToDo (will update when there are more features)
+* [X] Color scheme changed to fit my aesthetics
+
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/yunijeong5/SimpleToDo/blob/master/vid_demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/2eocqz9.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
